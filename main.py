@@ -2,6 +2,7 @@ import os
 import time
 from cad_usuario import *
 from datetime import datetime
+from tqdm import tqdm
 
 data_atual = datetime.now()
 data_formatada = data_atual.strftime("%d/%m/%Y")
@@ -30,8 +31,10 @@ def menu_principal():
         elif opcao == '4':
             atualizar_saldo()
         elif opcao == '5':
-            print("Saindo do programa...")
-            time.sleep(2)
+            print(f'Saindo do programa...')
+            for opcao in tqdm(range(100)):
+                for barra in opcao:
+                    barra.time.sleep(0.05)
             break
         else:
             print("Opção inválida. Tente novamente.")
