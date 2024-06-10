@@ -10,6 +10,7 @@ data_formatada = data_atual.strftime("%d/%m/%Y")
 def menu_principal():
     while True:
         print(f"{"="*20} Bem Vindo ao Mamute Bank {"="*20}")
+        print(f"{"="*20} {data_formatada} {"="*20}")
         print("1. Quero ser cliente do banco")
         print("2. Deletar dados da conta")
         print("3. Dados da conta")
