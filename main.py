@@ -30,11 +30,10 @@ def menu_principal():
             print(consultar_saldo(cpf))
         elif opcao == '4':
             atualizar_saldo()
-        elif opcao == '5':
+        elif (opcao) == '5':
             print(f'Saindo do programa...')
             for opcao in tqdm(range(100)):
-                for barra in opcao:
-                    barra.time.sleep(0.05)
+                opcao.time.sleep(0.05)
             break
         else:
             print("Opção inválida. Tente novamente.")
