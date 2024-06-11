@@ -32,8 +32,9 @@ def menu_principal():
             atualizar_saldo()
         elif (opcao) == '5':
             print(f'Saindo do programa...')
-            for opcao in tqdm(range(100)):
-                opcao.time.sleep(0.05)
+            print(f'Obrigado por usar nossos serviços, até logo!')
+            for i in tqdm(range(100)):
+                time.sleep(0.03)
             break
         else:
             print("Opção inválida. Tente novamente.")
